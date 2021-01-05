@@ -1,0 +1,105 @@
+/*Når man bruger box-sizing undgår man at skulle medregne border og padding. Boksens width og height medregner indhold, padding og border*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+html {
+    scroll-behavior: smooth;
+
+}*/
+
+
+
+/*Links styling*/
+
+a {
+    color: white;
+    font-family: ;
+    text-decoration: none;
+}
+
+
+a:active {
+    color: white;
+    font-family: ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+a:hover {
+    color: #f57dab;
+    font-family: ;
+}
+
+
+
+footer {
+    color: white;
+}
+
+#menuknap {
+    display: none;
+}
+
+#menu {
+    padding: 2rem 2rem 2rem 2rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/*Alt på mobile*/
+
+@media (max-width: 600px) {
+
+    /*Burgermenu*/
+
+
+    nav {
+        position: absolute;
+        z-index: 1;
+        margin-top: 0;
+        height: 100%;
+        width: 97vw;
+        background-color: #d6cffa;
+    }
+
+
+
+    #menuknap {
+        display: inline-block;
+        color: white;
+        z-index: 2;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 1.8vh;
+        left: 7vw;
+    }
+
+
+
+    #menu {
+        display: inline-block;
+        position: relative;
+        top: 4rem;
+        left: 35vw;
+    }
+
+    ul {
+        line-height: 300%;
+    }
+
+    /*Classes til brug i js*/
+
+    .hidden {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
