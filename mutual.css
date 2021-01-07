@@ -1,14 +1,74 @@
+/*fælles style*/
+
 /*Når man bruger box-sizing undgår man at skulle medregne border og padding. Boksens width og height medregner indhold, padding og border*/
+
 
 * {
     box-sizing: border-box;
 }
 
-/*
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
 html {
     scroll-behavior: smooth;
+}
 
-}*/
+
+
+
+
+a {
+    color: #f57dab;
+    font-family: ;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: gothic-open-shaded, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+a:hover {
+    color: white;
+    font-family: gothic-open-shaded, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+
+
+footer {
+    color: #f57dab;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+
+}
+
+#menuknap {
+    display: none;
+}
+
+#menu {
+    padding: 4rem 2rem 2rem 2rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
 
 
 /*forside css*/
@@ -23,7 +83,7 @@ html {
 
 
 .portfoliobody {
-    background-image: linear-gradient(#ebd6fa, #b1b7f5);
+    background-image: linear-gradient(#f2e0ff, #ffc2c2);
 }
 
 #sections {
@@ -34,106 +94,187 @@ html {
 }
 
 
+/*styling af links*/
+
+p a {
+    font-size: 1.2rem;
+}
+
+
+/*man skal kun lave grid-column: (1/2) på det første billede, så indordner de andre billeder sig/tager den plads der er givet via 1fr 1fr 1fr (de alle fylder lige meget grundet 1fr 1fr 1fr).
+
+justify-content: space-between gør at der kommer lige meget mellemrum mellem  alle billederne
+
+
+*/
+
 #first_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
+    grid-gap: 20px;
 }
 
 #first_section h1 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    font-size: 1.5rem;
 }
 
 
 #first_section h2 {
-    grid-column: 1/3;
-    color: #f57dab;
+    grid-column: 1/4;
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2rem;
+
 }
 
 #first_section p {
-    grid-column: 1/3;
-    color: #f57dab;
+    grid-column: 1/2;
+    color: black;
+    line-height: 1.5;
+}
+
+
+#first_section .img1 {
+    grid-column: 1/2;
+}
+
+#first_section .computer {
+    grid-column: 2/3;
 }
 
 #second_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
+    grid-gap: 20px;
+}
+
+#second_section .img6 {
+    grid-column: 1/2;
 }
 
 #second_section h1 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    font-size: 1.5rem;
 }
 
 
 #second_section h2 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
 }
 
 #second_section p {
-    grid-column: 1/3;
-    color: #f57dab;
+    grid-column: 1/2;
+    color: black;
+    line-height: 1.5;
 }
+
+
+#second_section .tshirt {
+    grid-column: 2/3;
+    padding-left: 154px;
+}
+
+
+
 
 #third_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
+    grid-gap: 20px;
 }
 
 #third_section h1 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    font-size: 1.5rem;
 }
 
 
 #third_section h2 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+
 }
 
 #third_section p {
-    grid-column: 1/3;
-    color: #f57dab;
+    grid-column: 1/2;
+    color: black;
+    line-height: 1.5;
+}
+
+#third_section .img4 {
+    grid-column: 1/2;
+}
+
+
+#third_section .gameboy {
+    grid-column: 2/3;
+    padding-left: 150px;
 }
 
 #fourth_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
+    grid-gap: 20px;
 }
 
 #fourth_section h1 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    font-size: 1.5rem;
 }
 
 
 #fourth_section h2 {
     grid-column: 1/3;
-    color: #f57dab;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
 }
 
 #fourth_section p {
-    grid-column: 1/3;
-    color: #f57dab;
+    grid-column: 1/2;
+    color: black;
+    line-height: 1.5;
 }
 
+#fourth_section .img5 {
+    grid-column: 1/2;
+}
+
+
+#fourth_section .kamera {
+    grid-column: 2/3;
+    padding-left: 150px;
+}
 
 /*__________*/
 
@@ -143,48 +284,109 @@ html {
     background-image: linear-gradient(#b8efab, #eaf28e);
 }
 
+#sectionwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
 
-p {
+#sectionwrapper p {
+    grid-column: 1/3;
+    grid-row: 1/2;
     color: #f57dab;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.front {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.skrift {
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 
-/*fælles style*/
+.lampe {
+    grid-column: 3/4;
+    grid-row: 2/3;
 
+}
 
-a {
-    color: #f57dab;
-    font-family: ;
-    text-decoration: none;
-    font-size: 1.5rem;
+.spil {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.vand {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
 }
 
 
-
-
-a:hover {
-    color: #a9cbf8;
-    font-family: ;
+.bil {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 
-
-footer {
-    color: #f57dab;
+.sommerfugl {
+    grid-column: 1/3;
+    grid-row: 4/5;
 }
 
-#menuknap {
-    display: none;
-}
-
-#menu {
-    padding: 2rem 2rem 2rem 2rem;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+.blomster {
+    grid-column: 3/4;
+    grid-row: 4/5;
 }
 
 
+.mig {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.parasol {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+
+.bog {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.blomstermark {
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+.pandekager {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.blaaregn {
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.blomst {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.is {
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+
+/*__________*/
 
 
 
@@ -200,7 +402,6 @@ footer {
         position: absolute;
         z-index: 1;
         margin-top: 0;
-        height: 100%;
         width: 97vw;
         background-color: pink;
     }
@@ -222,17 +423,16 @@ footer {
     #menu {
         display: inline-block;
         position: relative;
-        top: 4rem;
-        left: 35vw;
+        top: 3rem;
+        left: 33vw;
     }
 
 
 
     #sections {
-        display: inline-block;
+        display: block;
         position: relative;
-        top: 4rem;
-        left: 35vw;
+        left: 9vw;
     }
 
 
