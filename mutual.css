@@ -2,20 +2,24 @@
 
 /*fælles style*/
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
 /*Når man bruger box-sizing undgår man at skulle medregne border og padding. Boksens width og height medregner indhold, padding og border*/
-
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
 
 
 html {
@@ -24,6 +28,42 @@ html {
 
 
 
+.hidden {
+    transform: translateX(-100%);
+    display: none;
+}
+
+
+#menuknap {
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+    width: 100%;
+}
+
+
+#menu {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: pink;
+
+}
+
+
+
+
+#menu .sections {
+    list-style-type: none;
+    padding-top: 42px;
+    position: relative;
+
+}
+
 a {
     color: #f57dab;
     text-decoration: none;
@@ -31,7 +71,6 @@ a {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-style: normal;
-    list-style-type: none;
 
 }
 
@@ -47,549 +86,619 @@ a:hover {
 }
 
 
-
-
 footer {
     color: #f2e0ff;
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 20px;
     font-family: 'helvetica';
-
-
+    font-size: 15px;
 }
 
-p a {
-    font-family: 'helvetica';
-    font-size: 1rem;
-}
+/*forside css*/
 
-p a:hover {
-    color: white;
-    font-family: 'helvetica';
-    font-size
-}
-
-
-#sections {
-    display: inline-block;
-    top: 1rem;
-    left: 28vw;
-    padding-top: 57px;
-    padding-left: 28px;
-}
-
-#sections a {
-    color: #f57dab;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: DM Serif Display', serif;
-
-}
-
-
-/*Burgermenu*/
-
-#menuknap {
-    display: inline-block;
-    color: white;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 2vh;
-    left: 5vw;
-}
-
-
-
-
-#menu {
-    display: inline-block;
-    top: 1rem;
-    left: 28vw;
-    padding-top: 57px;
-    padding-left: 28px;
-
-}
-
-
-
-nav {
-    position: absolute;
-    z-index: 1;
-    margin-top: 0;
-    width: 100%;
-    background-color: pink;
-}
-
-
-
-
-ul {
-    line-height: 300%;
-    list-style-type: none;
-}
-
-
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-}
-
-
-/*om mig*/
-
-.ommigbody {
-    background-image: linear-gradient(#fdffc0, #e591bb);
-}
-
-#sectionwrapper_om_mig {
-    padding-left: 40px;
-}
-
-
-#sectionwrapper_om_mig p {
-    color: #8969be;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-family: 'helvetica';
-    padding-right: 60px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-.billeder img {
-    padding-bottom: 30px;
-}
-
-#first_section,
-.sommerfugl,
-.skrift,
-.blomstermark {
-    display: none;
-}
-
-
-/*__________*/
-
-/*portfolio*/
-
-
-.portfoliobody {
-    background-image: linear-gradient(#f2e0ff, #ffc2c2);
-}
-
-
-#sectionwrapper_portfolio {}
-
-#first_section,
-#second_section,
-#third_section,
-#fourth_section {}
-
-.kamera,
-.gameboy,
-.tshirt,
-.computer,
-.portfoliobody img {
-    display: none;
-}
-
-
-/*__________*/
-
-/*forside*/
 
 .forsidebody {
     background-image: linear-gradient(#fff6c2, #ceeb97, #9ae08c);
 }
 
 
+#splash {
+    width: 100%;
+    height: 116vh;
+    background-image: url(fotos/kirsebaerblomster.svg);
+    background-size: cover;
+    background-position: 100%;
+    max-width: none;
+}
 
 
-/*--------*/
+#splash h1 {
+    text-align: center;
+    color: #f57dab;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    padding-top: 50px;
+
+}
 
 
+/*______________*/
+
+/*portfolio* css*/
 
 
+.portfoliobody footer {
+    color: white;
+}
 
 
-.overskrift {
-    padding-top: 83px;
+.portfoliobody img {
+    display: none;
+}
+
+.portfoliobody {
+    background-image: linear-gradient(#f2e0ff, #ffc2c2);
+}
+
+p a {
+    font-family: 'helvetica';
+    font-size: 1.5rem;
+}
+
+p a:hover {
+    color: white;
+    font-family: 'helvetica';
+    padding-bottom: 10px;
+}
+
+
+#first_section {
+    background-color: #fdd5dc;
+    background: cover;
+}
+
+#second_section {
+    background-color: lavender;
+}
+
+
+#third_section {
+    background-color: #dfffbe;
+}
+
+#fourth_section {
+    background-color: #fff6c2;
 }
 
 
 
+#first_section h1 {
+    color: #8969be;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: 'helvetica';
+    padding-top: 100px;
+    padding-left: 15px;
+}
 
 
-/
-/*Alt på en skærm der er over 600 px*/
 
-@media (min-width: 600px) {
+#first_section h2 {
+    color: #8969be;
+    font-size: 1.2rem;
+    font-family: 'helvetica';
+    margin: 15px;
+    padding-top: 10px;
+}
 
+
+#first_section p {
+    color: #8969be;
+    line-height: 1.5;
+    font-family: 'helvetica';
+    padding-top: 10px;
+    margin: 15px;
+}
+
+
+
+#first_section .computer {
+    padding-left: 100px;
+}
+
+
+#second_section h1 {
+    color: #8969be;
+    font-size: 1.5rem;
+    font-family: 'helvetica';
+    padding-top: 50px;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+
+#second_section h2 {
+    color: #8969be;
+    font-size: 1.2rem;
+    font-family: 'helvetica';
+    padding-top: 10px;
+    margin: 15px;
+
+}
+
+#second_section p {
+    color: #8969be;
+    line-height: 1.5;
+    font-family: 'helvetica';
+    padding-top: 20px;
+    margin: 15px;
+}
+
+
+#third_section h1 {
+    color: #8969be;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: 'helvetica';
+    padding-top: 50px;
+    margin: 15px;
+}
+
+
+#third_section h2 {
+    color: #8969be;
+    font-size: 1.2rem;
+    font-family: 'helvetica';
+    margin: 15px;
+    padding-top: 10px;
+
+
+}
+
+#third_section p {
+
+    color: #8969be;
+    line-height: 1.5;
+    font-family: 'helvetica';
+    padding-top: 10px;
+    margin: 15px;
+}
+
+
+#fourth_section h1 {
+    color: #8969be;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: 'helvetica';
+    padding-top: 50px;
+    margin: 15px;
+}
+
+
+#fourth_section h2 {
+    color: #8969be;
+    font-size: 1.2rem;
+    font-family: 'helvetica';
+    padding-top: 10px;
+    margin: 15px;
+
+
+}
+
+#fourth_section p {
+    color: #8969be;
+    line-height: 1.5;
+    font-family: 'helvetica';
+    padding-top: 10px;
+    margin: 15px;
+}
+
+
+/*______________*/
+
+/*om mig css*/
+
+.ommigbody {
+    background-image: linear-gradient(#f7fa9e, #e591bb);
+}
+
+
+.sommerfugl,
+.skrift,
+.blomstermark {
+    display: none;
+}
+
+#sectionwrapper_om_mig p {
+    color: #8969be;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'helvetica';
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    display: block;
+
+
+}
+
+
+.ommigbody img {
+    padding-bottom: 30px;
+    padding-left: 39px;
+}
+
+
+
+/*______________*/
+
+
+@media only screen and (min-width: 600px) {
 
 
     #menuknap {
         display: none;
     }
 
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
     #menu {
-        display: flex;
         padding: 4rem 2rem 4rem 2rem;
-        justify-content: space-evenly;
-    }
-
-
-    #sections {
-        padding: 0.5rem 2rem 3rem 2rem;
+        list-style-type: none;
         display: flex;
         justify-content: space-evenly;
+        transition: transform .3s;
+        transform-origin: top left;
+        background-color: transparent;
     }
 
 
+    #section h1 {
+        display: none;
+    }
 
-    /*__________*/
+    #menu .sections {
+        display: flex;
+        padding: 0.5rem 2rem 3rem 2rem;
+        justify-content: space-evenly;
 
-    /*om mig css*/
+    }
+
+    /*forside*/
+
+    #splash {
+        width: 100%;
+        height: 82vh;
+    }
+
+    #splash h1 {
+        display: none;
+    }
+
+    /*____________*/
+
+    /*om mig*/
 
 
     #sectionwrapper_om_mig {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 10px;
+
 
     }
+
+
+    .ommigbody img {
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+
+    }
+
 
     #sectionwrapper_om_mig p {
         grid-column: 1/3;
         grid-row: 1/2;
-        font-size: 1rem;
+        margin: 0px;
+        padding-top: 0;
+
+
     }
 
+    .lampe {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .skrift {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: block;
+    }
+
+
+    .vand {
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+    }
+
+    .parasol {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .front {
+        grid-column: 2/3;
+        grid-row: 3/4;
+
+    }
+
+
+    .mig {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+
+    .sommerfugl {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        display: block;
+    }
+
+    .blomster {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
+
+    .bornholm {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .blomst {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+
+    .bog {
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+
+    .blomstermark {
+        grid-column: 2/4;
+        grid-row: 6/7;
+        display: block;
+    }
+
+    .pandekager {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+
+    .olie {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .spil {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    .is {
+        grid-column: 3/4;
+        grid-row: 7/8;
+    }
+
+
+
+    /*portfolio css*/
+
+
+    .kamera,
+    .gameboy,
+    .tshirt,
+    .computer,
+    .portfoliobody img {
+        display: block;
+    }
+
+    #first_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        padding-top: 23px;
+    }
+
+    #first_section h1 {
+        grid-column: 1/3;
+        padding-top: 0px;
+        margin: -17px;
+
+
+    }
+
+
+    #first_section h2 {
+        grid-column: 1/3;
+        padding-top: 30px;
+        margin: 0px;
+
+
+    }
+
+    #first_section p {
+        grid-column: 1/4;
+        padding-top: 0px;
+        margin: 0px;
+
+    }
+
+    .pet {
+        grid-column: 1/4;
+    }
+
+    #first_section .img1 {
+        grid-column: 1/2;
+    }
+
+    #first_section .computer {
+        grid-column: 2/3;
+        padding-left: 100px;
+    }
+
+    #second_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        grid-gap: 20px;
+    }
+
+    #second_section .img2 {
+        grid-column: 1/2;
+    }
+
+    #second_section h1 {
+        grid-column: 1/3;
+        margin: 0px;
+
+
+    }
+
+
+    #second_section h2 {
+        grid-column: 1/3;
+        padding-top: 30px;
+        margin: 0px;
+
+
+
+    }
+
+    #second_section p {
+        grid-column: 1/4;
+        padding-top: 0px;
+        margin: 0px;
+
+    }
+
+
+    #second_section .tshirt {
+        grid-column: 2/3;
+        padding-left: 154px;
+    }
+
+
+
+
+    #third_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        grid-gap: 20px;
+    }
+
+    #third_section h1 {
+        grid-column: 1/3;
+        margin: 0px;
+
+    }
+
+
+    #third_section h2 {
+        grid-column: 1/3;
+        padding-top: 30px;
+        margin: 0px;
+
+
+
+    }
+
+    #third_section p {
+        grid-column: 1/4;
+        padding-top: 0px;
+        margin: 0px;
+
+    }
+
+    #third_section .img3 {
+        grid-column: 1/2;
+    }
+
+
+    #third_section .gameboy {
+        grid-column: 2/3;
+        padding-left: 150px;
+    }
+
+    #fourth_section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        grid-gap: 20px;
+    }
+
+    #fourth_section h1 {
+        grid-column: 1/3;
+        margin: 0px;
+
+    }
+
+
+    #fourth_section h2 {
+        grid-column: 1/3;
+        padding-top: 30px;
+        margin: 0px;
+
+
+    }
+
+    #fourth_section p {
+        grid-column: 1/4;
+        padding-top: 0px;
+        margin: 0px;
+
+    }
+
+    #fourth_section .img4 {
+        grid-column: 1/2;
+    }
+
+
+    #fourth_section .kamera {
+        grid-column: 2/3;
+        padding-left: 150px;
+    }
+
+
 }
-
-.lampe {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.skrift {
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-
-
-.vand {
-    grid-column: 3/4;
-    grid-row: 2/3;
-
-}
-
-.parasol {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.front {
-    grid-column: 2/3;
-    grid-row: 3/4;
-
-}
-
-
-.bil {
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-
-.sommerfugl {
-    grid-column: 1/3;
-    grid-row: 4/5;
-}
-
-.blomster {
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-
-
-.mig {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-
-.blomst {
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
-
-
-.bog {
-    grid-column: 3/4;
-    grid-row: 5/6;
-}
-
-.blomstermark {
-    grid-column: 2/4;
-    grid-row: 6/7;
-}
-
-.pandekager {
-    grid-column: 1/3;
-    grid-row: 6/7;
-}
-
-.blaaregn {
-    grid-column: 1/2;
-    grid-row: 7/8;
-}
-
-.spil {
-    grid-column: 2/3;
-    grid-row: 7/8;
-}
-
-.is {
-    grid-column: 3/4;
-    grid-row: 7/8;
-}
-
-
-
-
-.blomsterbilleder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
-
-}
-
-.kirsebaerblomsteret {
-    grid-column: 1/2;
-    margin: 0;
-}
-
-/*___________*/
-
-/*portfolio css*/
-
-
-
-/*man skal kun lave grid-column: (1/2) på det første billede, så indordner de andre billeder sig/tager den plads der er givet via 1fr 1fr 1fr (de alle fylder lige meget grundet 1fr 1fr 1fr).
-
-justify-content: space-between gør at der kommer lige meget mellemrum mellem  alle billederne
-
-
-*/
-
-#first_section {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    padding-top: 23px;
-}
-
-#first_section h1 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.5rem;
-    font-family: 'helvetica';
-
-}
-
-
-#first_section h2 {
-    grid-column: 1/4;
-    color: #8969be;
-    text-decoration: underline;
-    font-size: 1.2rem;
-    font-family: 'helvetica';
-
-}
-
-#first_section p {
-    grid-column: 1/2;
-    color: #8969be;
-    line-height: 1.5;
-    font-family: 'helvetica';
-}
-
-
-#first_section .img1 {
-    grid-column: 1/2;
-}
-
-#first_section .computer {
-    grid-column: 2/3;
-    padding-left: 100px;
-}
-
-#second_section {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    grid-gap: 20px;
-}
-
-#second_section .img2 {
-    grid-column: 1/2;
-}
-
-#second_section h1 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.5rem;
-    font-family: 'helvetica';
-}
-
-
-#second_section h2 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.2rem;
-    text-decoration: underline;
-    font-family: 'helvetica';
-    padding-top: 30px;
-
-}
-
-#second_section p {
-    grid-column: 1/2;
-    color: #8969be;
-    line-height: 1.5;
-    font-family: 'helvetica';
-}
-
-
-#second_section .tshirt {
-    grid-column: 2/3;
-    padding-left: 154px;
-}
-
-
-
-
-#third_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    grid-gap: 20px;
-}
-
-#third_section h1 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.5rem;
-    font-family: 'helvetica';
-}
-
-
-#third_section h2 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.2rem;
-    text-decoration: underline;
-    font-family: 'helvetica';
-    padding-top: 30px;
-
-
-}
-
-#third_section p {
-    grid-column: 1/2;
-    color: #8969be;
-    line-height: 1.5;
-    font-family: 'helvetica';
-}
-
-#third_section .img3 {
-    grid-column: 1/2;
-}
-
-
-#third_section .gameboy {
-    grid-column: 2/3;
-    padding-left: 150px;
-}
-
-#fourth_section {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    grid-gap: 20px;
-}
-
-#fourth_section h1 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.5rem;
-    font-family: 'helvetica';
-}
-
-
-#fourth_section h2 {
-    grid-column: 1/3;
-    color: #8969be;
-    font-size: 1.2rem;
-    text-decoration: underline;
-    font-family: 'helvetica';
-    padding-top: 30px;
-
-}
-
-#fourth_section p {
-    grid-column: 1/2;
-    color: #8969be;
-    line-height: 1.5;
-    font-family: 'helvetica';
-}
-
-#fourth_section .img4 {
-    grid-column: 1/2;
-}
-
-
-#fourth_section .kamera {
-    grid-column: 2/3;
-    padding-left: 150px;
-}
-
-
-.kamera,
-.gameboy,
-.tshirt,
-.computer,
-.portfoliobody img {
-    display: block;
-}
-
-
-
-.overskrift {
-    padding-top: 83px;
-}
-
-/*
-.sommerfugl,
-.skrift,
-.blomstermark {
-    display: block;
-}*/
-
 
 /*_____________________*/
