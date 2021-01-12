@@ -1,13 +1,8 @@
 /*mobile version*/
 
-/*fælles style*/
-
-/*Når man bruger box-sizing undgår man at skulle medregne border og padding. Boksens width og height medregner indhold, padding og border*/
-
 * {
     box-sizing: border-box;
     margin: 0;
-
 }
 
 main {
@@ -49,31 +44,36 @@ html {
     list-style-type: none;
     padding-left: 30px;
     padding-top: 50px;
-    padding-bottom: 50px;
     background-color: pink;
+    padding-bottom: 20px;
 
 }
 
 
-
-
-#menu .sections {
+#menusections {
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-top: 37px;
+    background-color: pink;
     list-style-type: none;
-    padding-top: 42px;
-    position: relative;
-
 }
+
+
 
 a {
     color: #f57dab;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-style: normal;
 
 }
 
+
+.portfoliomenu a {
+    font-size: 1.5rem;
+}
 
 
 
@@ -105,7 +105,7 @@ footer {
 
 #splash {
     width: 100%;
-    height: 116vh;
+    height: 98vh;
     background-image: url(fotos/kirsebaerblomster.svg);
     background-size: cover;
     background-position: 100%;
@@ -127,7 +127,7 @@ footer {
 
 /*______________*/
 
-/*portfolio* css*/
+/*portfolio css*/
 
 
 .portfoliobody footer {
@@ -135,13 +135,21 @@ footer {
 }
 
 
-.portfoliobody img {
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8 {
     display: none;
 }
 
 .portfoliobody {
     background-image: linear-gradient(#f2e0ff, #ffc2c2);
 }
+
 
 p a {
     font-family: 'helvetica';
@@ -157,7 +165,6 @@ p a:hover {
 
 #first_section {
     background-color: #fdd5dc;
-    background: cover;
 }
 
 #second_section {
@@ -206,9 +213,20 @@ p a:hover {
 
 
 #first_section .computer {
-    padding-left: 100px;
+    padding-left: 30px;
 }
 
+.tshirt {
+    padding-left: 40px;
+}
+
+.gameboy {
+    padding-left: 50px;
+}
+
+.kamera {
+    padding-left: 50px;
+}
 
 #second_section h1 {
     color: #8969be;
@@ -322,8 +340,6 @@ p a:hover {
     padding-bottom: 40px;
     padding-left: 20px;
     display: block;
-
-
 }
 
 
@@ -337,6 +353,8 @@ p a:hover {
 /*______________*/
 
 
+/*skærme over 600 pixels*/
+
 @media only screen and (min-width: 600px) {
 
 
@@ -344,13 +362,13 @@ p a:hover {
         display: none;
     }
 
-    #menu.hidden {
+    .hidden {
         transform: translateX(0);
         opacity: 1;
     }
 
     #menu {
-        padding: 4rem 2rem 4rem 2rem;
+        padding: 3rem 0rem 3.5rem 0rem;
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
@@ -358,6 +376,20 @@ p a:hover {
         transform-origin: top left;
         background-color: transparent;
     }
+
+
+
+    #menusections {
+        padding: 0rem 0rem 4rem 0rem;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        transition: transform .3s;
+        transform-origin: top left;
+        background-color: transparent;
+    }
+
+
 
 
     #section h1 {
@@ -375,7 +407,7 @@ p a:hover {
 
     #splash {
         width: 100%;
-        height: 82vh;
+        height: 80vh;
     }
 
     #splash h1 {
@@ -505,15 +537,25 @@ p a:hover {
     }
 
 
+    /*______________*/
+
 
     /*portfolio css*/
 
+    #first_section .computer {
+        padding-left: 50px;
 
-    .kamera,
-    .gameboy,
-    .tshirt,
-    .computer,
-    .portfoliobody img {
+    }
+
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6,
+    .img7,
+    .img8 {
         display: block;
     }
 
@@ -521,8 +563,7 @@ p a:hover {
         display: grid;
         grid-template-columns: 2fr 2fr;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
         padding-bottom: 30px;
         grid-row-gap: 20px;
         grid-column-gap: 20px;
@@ -550,6 +591,8 @@ p a:hover {
         grid-column: 1/4;
         padding-top: 0px;
         margin: 0px;
+        padding-right: 20px;
+
 
     }
 
@@ -563,20 +606,19 @@ p a:hover {
 
     #first_section .computer {
         grid-column: 2/3;
-        padding-left: 100px;
     }
 
     #second_section {
         display: grid;
         grid-template-columns: 2fr 2fr;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
         padding-bottom: 30px;
         grid-gap: 20px;
+
     }
 
-    #second_section .img2 {
+    #second_section .img1 {
         grid-column: 1/2;
     }
 
@@ -601,6 +643,8 @@ p a:hover {
         grid-column: 1/4;
         padding-top: 0px;
         margin: 0px;
+        padding-right: 20px;
+
 
     }
 
@@ -617,10 +661,10 @@ p a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
         padding-bottom: 30px;
         grid-gap: 20px;
+        padding-left: 25px;
     }
 
     #third_section h1 {
@@ -635,18 +679,18 @@ p a:hover {
         padding-top: 30px;
         margin: 0px;
 
-
-
     }
 
     #third_section p {
         grid-column: 1/4;
         padding-top: 0px;
         margin: 0px;
+        padding-right: 20px;
+
 
     }
 
-    #third_section .img3 {
+    #third_section .img1 {
         grid-column: 1/2;
     }
 
@@ -660,8 +704,7 @@ p a:hover {
         display: grid;
         grid-template-columns: 2fr 2fr 1fr;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 29px;
         padding-bottom: 30px;
         grid-gap: 20px;
     }
@@ -685,10 +728,11 @@ p a:hover {
         grid-column: 1/4;
         padding-top: 0px;
         margin: 0px;
+        padding-right: 20px;
 
     }
 
-    #fourth_section .img4 {
+    #fourth_section .img1 {
         grid-column: 1/2;
     }
 

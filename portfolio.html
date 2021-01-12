@@ -18,131 +18,123 @@
 
 </head>
 
-<div class="portfoliobody">
+<body class="portfoliobody">
+    <header>
+        <nav class="portfoliomenu">
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="om_mig.html">Om mig</a></li>
+            </ul>
+            <ul id="menusections" class="hidden">
+                <li><a href="portfolio.html#first_section">Tema 2 - Grundlæggende HTML</a></li>
+                <li> <a href="portfolio.html#second_section">Tema 3 - Grundlæggende UX</a></li>
+                <li> <a href="portfolio.html#third_section">Tema 4 - Animation</a></li>
+                <li> <a href="portfolio.html#fourth_section">Tema 5 - Grundlæggende indhold</a></li>
+            </ul>
+        </nav>
 
-    <body>
-        <header>
-            <nav>
-                <div id="menuknap">☰</div>
-                <ul id="menu" class="hidden">
-                    <li><a href="forside.html">Forside</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="om_mig.html">Om mig</a></li>
+    </header>
+    <main>
 
-                    <div class="sections">
-                        <li><a href="portfolio.html#first_section">Tema 2 - Grundlæggende HTML</a>
-                        <li> <a href="portfolio.html#second_section">Tema 3 - Grundlæggende UX</a></li>
-                        <li> <a href="portfolio.html#third_section">Tema 4 - Animation</a>
-                        <li> <a href="portfolio.html#fourth_section">Tema 5 - Grundlæggende indhold</a>
-                        <li>
-                    </div>
-                </ul>
-            </nav>
+        <div id="sectionwrapper_portfolio">
 
-        </header>
-        <main>
+            <section id="first_section">
+                <div class=overskrift>
+                </div>
+                <h1>Tema 2 - Grundlæggende web</h1>
+                <p>I dette tema har vi lært nye faglige begreber om digitale brugergrænseoverflader og hvordan man kan lave et simpelt website i HTML, som er et programmeringssprog til struktur af eksempelvis websites. Vi har bl.a. lært om selectorere, tags, classes, id’er og attributter, som er elementer man bruger til at kode. Dertil blev vi introduceret til stylingprogrammet CSS, som snakker sammen med HTML, og bruges til at lave layout, styling og animationer til HTML-koden, så eks. websitet bliver flot og brugervenligt. Vi lærte hvordan man via browser developer tools, kan inspicere et givent website, for at se hvordan det er bygget op. Dette gør det for eksempel nemmere at finde fejl og hurtigt rette ens kode til, når man selv skal kode. Man kan uden at ændre i ens kode først, se hvordan det kommer til at se ud via inspektoren. For yderligere at gøre et website designmæssigt pænt og brugervenligt, lærte vi bl.a. at bruge semantisk indholdstruktur i HTML og grid, flexbox og Boxmodellen m.m. i CSS. Vi har dertil lært at følge layoutdiagrammer og wireframes til henholdsvis mobilversion og desktopversion mv, når vi skal kode noget. Et layoutdiagram viser grundstrukturen af hvordan HTML’en skal bygges op. En wireframe er et slags visuelt skelet for, hvordan ens indhold skal sættes op. Vi har lært, hvordan man håndterer prototypeprogrammet Adobe XD. Vi har lært, hvordan websites bliver responsive ved hjælp af media queries. En media query gør, at man kan få ting til at se forskellige ud, alt efter hvilken slags skærm man ser det på. Desuden har vi på dette tema lært om tekstopsætning og teksttermer, basale billedbehandlingsværtøjer i Photoshop og lært at benytte ftp (Filezilla) til deling af webproduktioner til vores eget domæne. </p> <br> <br>
+                <h2>02.04.02 responsive_site_V2:</h2>
+                <p>I denne opgave skulle vi lave et simpelt website i HTML og CSS ud fra en række krav, men om et valgfrit emne. Vi skulle bl.a. inddrage en bestemt stilart på vores site. I de første dage af temaopstarten lavede vi derfor gruppearbejde om flere forskellige stilarter, som vi skulle pitche til klassen. Vores gruppe fik stilen video game style, som er inspireret af retro arkadespilmaskiner og videospil, og hvor der tit indgår interaktive elementer, animationer og kraftige farver. Før vi gik i gang med kodning af sitet, skulle vi først lave en mockup (model af det færdige projekt) i Adobe XD og et moodboard i Indesign, så vi fik en fornemmelse af, hvordan det ville se ud på det færdige site. Vi fik udstukket wireframes og layoutdiagrammer med sektioner af lærerne, som vi skulle følge og sætte vores indhold op efter. Vi skulle også lave et styletile, som der linkes til på det endelige site, og som viser hvilke farver og skrifttyper, man har tænkt sig at bruge samt hvordan UI-elementerne (elementer brugeren kan interagere med på et site) på sitet skal se ud. Udover det har vi lært, hvor man kan finde royalty free billeder og finde fonte til ens site, hvordan man omdanner fonte og sætter dem ind i koden. I delopgaven som lå forud for det endelige site, (Responsive_v0) skulle alt fungere med grid-layout, kolonner osv. I Responsive site v_1 lærte vi at style vores site ved hjælp af padding, margin, farver og skrifter etc. Vi lærte at beskære billeder i Photoshop, så de så godt ud i det gridbaserede layout. Dertil hvordan man laver og indsætter et favicon (det lille ikon venstre top hjørne, som demonstrerer hvilken side man er på f.eks. Facebooks lille blå/hvid f-ikon) i HTML. Det endelige site skulle fungere i både mobil-desktop (skærm over 1200px) og se ud som planlagt, samt validere på et valideringssite for både HTML og CSS. Disse to valideringssider kan vise om man har fejl i ens kode. Vi har også lært om meta name="robots" content="noindex", som man sætter ind i head-elementet, for at sitet ikke kan indekseres af søgemaskiner. Jeg valgte at lave mit site om katte, og brugte farver i mine yndlingsfarver, for at personliggøre det. Til at demonstrere stilarten video game style, brugte jeg pixeleret skrift og lavede et splashbillede i Photoshop med pixelerede katte-figurer.
+                    <br> <br>Link til det endelige site: <a href=http://bjorkaabling.dk/kea/02_web/04_responsive/responsive_site_v2>02.04.02 responsive_site_V2 </a>
+                </p>
+                <div class="computer"><img src="fotos/computer%20.svg" alt="computer"></div>
+                <div class="img1"><img src="fotos/forsideresponsivesite.png" alt="forside" width="560" height="360">
+                </div>
+                <div class="img2"><img src="fotos/inteterbedreendkatte.png" alt="katte" width="560" height="360">
+                </div>
+            </section>
+            <section id="second_section">
+                <h1>Tema 3 - Grundlæggende UX</h1>
+                <p>I dette tema har vi lært en masse om UX (user experience) og UI (user interface). Vi har opnået en grundlæggende forståelse for samspillet mellem bruger og brugergrænseoverflader. Vi har lært at lave et brugervenligt og overbevisende produkt. Vi har dertil lært, hvordan man formidler et produkt, så man fanger brugeren og overbeviser dem om, at netop ens produkt er det bedste på markedet frem for konkurrentens. For at få en idé om, hvad en god brugeroplevelse er og ikke er, undersøgte vi eksisterende hjemmesider og deres brug af eksempelvis microcopy og USP. USP er unikke fordele, som kunder ikke kan finde andre steder. Dette er en god idé at benytte i sin markedsføring, for at skille sig ud fra konkurrenterne og vise potentielle leads og kunder, hvad man tilbyder/gør anderledes. Microcopy er ord eller (oftest) korte sætninger, der guider brugeren til , hvordan man interagerer med en hjemmeside/produkt.
+                    For at kunne opnå et godt brugervenligt site/produkt, er det vigtigt at lave undersøgelser om brugeren først, da man godt kan have en forudindtaget mening om, hvad en bruger gør og mener. Men når man så undersøger og indsamler empiri, kan det vise sig at give nogle helt andre resultater end dem, man havde regnet med. Vi lærte derfor om flere research- og anelysemetoder, som er gode at benytte, når man skal indsamle empiri. Vi indsamlede empiri både fra hinanden i klassen, men også fra vores omgangskreds og andre relevante kilder, der gav et indblik i hvad bestemte målgrupper vægter, når de eksempelvis vælger webshops. For at demonstrere vores nye viden, skulle vi lave en case for temaet nemlig designe en T-shirt webshop og pitche den i grupper.
+                </p>
+                <h2>03.01.05 Idé:</h2>
+                <p>I denne opgave skulle vi udforme de spæde idéer til vores T-shirt-webshop. Vi blev introduceret til flere UX-researchmetoder bl.a. observationsmetoden, kvalitativt og kvantitativt interview samt surveys og idégenererings-øvelser. Disse brugte vi til bedre at forstå, hvorfor brugere gør som de gør, hvad deres motivation bag er, og hvad de har brug for. Først startede vi med at lave en desk research, som er undersøgelse af sekundær data, som allerede er blevet indsamlet. Jeg læste en rapport om e-handel og fandt bl.a. ud af, at danskerne i 2019 lå i toppen af dem, der handler mest på nettet og at ”de unge forventer i højere grad indhold i form af produktanmeldelser og produktbilleder samt fokus på bæredygtighed…”. Dette viste sig at være meget brugbart idet jeg valgte at min side, primært skulle fokusere på unge brugere i alderen 15-30. Jeg lavede et moodboard med sider jeg fandt inspirerende og selv shopper hos, og for at spore mig ind på, hvad jeg selv ville opnå med min webshop. Og fandt en masse eksempler på god og dårlig microcopying, så jeg havde en idé om, hvordan og hvad jeg kunne skrive på mit eget site.</p>
+                <p> Link: <a href="ide_bjork.pdf">03.01.05 Idé</a></p>
+                <div class="tshirt"><img src="fotos/tshirt.svg" alt="tshirt"></div>
+                <h2>03.03.02 Endelig prototype:</h2>
+                <p>Den sidste del af dette tema mundede ud i den endelige prototype af vores webshop. På baggrund af min nye viden skulle jeg først finde ud af noget om min målgruppe.
+                    Jeg lavede derfor et semistruktureret interview. Semistrukturerede interviews giver plads til at spørge om uforberedte spørgsmål, lade den adspurgte bevæge sig væk fra de konkrete spørgsmål, og hvor intervieweren ikke nødvendigvis skal spørge i en bestemt rækkefølge. Jeg valgte at interviewe min roomie, og fandt ud af at hun går meget op i bæredygtighed, og at hun havde en fornemmelse af at mange andre unge også gør det. Dette gjorde mig nysgerrig på, om det virkelig forholder sig sådan. Dette fik jeg afklaret ved at lave et struktureret interview igennem en survey, som jeg delte på Facebook. Strukturerede interviews følger rækkefølgen fra interviewguiden, der er lavet i forvejen, og de interviewede skal vælge en af de udstukne svarmuligheder. Svarene differerede lidt, men hovedparten, som i høj grad var unge, mente at bæredygtighed og kvalitet er vigtigt, når de handler på nettet.
+                    Med min nye viden om brugernes behov og på baggrund af idégenerering og inspiration fra resten af klassen, kunne jeg nu gå i gang med at lave min webshop. Vi skulle lave først lave en Low Fidelity udgave af vores site - vi skulle skitsere (på papir) hvordan sitet skulle se ud, og hvad det i grove træk skulle kunne. Derefter lave en udførlig High Fidelty prototype i Adobe XD, der bl.a. viser hvordan brugeren kommer rundt på siden og gennemfører et køb, og som ser ud, som vi gerne vil have siden til. Jeg valgte som sagt at lave en side om genbrugelige stofrester, der kan omsys til noget nyt, fordi jeg går op i miljø og bæredygtighed. Stilen på hjemmesiden har jeg valgt at lave enkel og i lyserøde og lilla nuancer og med små blomsterdetaljer, fordi det repræsenterer mit univers, hvilket giver webshoppen et personligt touch, som brugeren nemmere kan huske. Dertil tilføjede jeg USP i form af specielle tilbud og rabatter og microcopy i form af små opmuntrende og guidende tekster - alt sammen noget der gavner og hjælper brugeren. Jeg lavede en "om"-side, hvor man kan læse om, hvor materialerne kommer fra, og om mig som stifter af projektet, og hvordan mine kollegaer har et godt arbejdsmiljø. Dette gjorde jeg, for at øge gennemsigtigheden i produktet og skabe troværdighed. Jeg synes generelt det er et problem at mange websider ikke oplyser om, hvor deres produkter stammer fra, og hvem der laver dem. Udover at sitet opfylder de krav jeg synes er vigtige, opfylder de også kravene min målgruppe synes er vigtige, hvilket jeg fandt ud af igennem min research.
+                </p>
+                <p> Link:
+                    <a href=https://xd.adobe.com/view/b9f16832-dac8-4194-a455-081f681cb9fb-eca2/screen/13e87bce-a615-472f-bd33-479aac0cce27>03.03.02 Endelig prototype </a>
+                </p>
+                <p></p>
+                <div class="img3"><img src="fotos/prototypeforside.png" alt="prototype1" width="560" height="360"></div>
+                <div class="img4"><img src="fotos/prototypebetaling.png" alt="prototype2" width="560" height="360">
+                </div>
+                <h2>03.03.03 Pitch:</h2>
+                <p>I denne opgave skulle vi lave en pitch af vores færdige prototype og vejen dertil. Her tog jeg udgangspunkt i pitchmodellen NABC - en pitch-skabelon med følgende punkter: 1: Attenion, 2: Needs, Approach og Benefits, 3: Competetion eller Action, som vi også har gjort brug af i tema 5, da vi skulle fremlægge vores redesignopgave. I første punkt skaber man opmærksomhed på sit produkt og fremlægger en fængende indgangsvinkel, som fastholder publikum. Man kan for eksempel provokere publikum lidt eller stille et spørgsmål, hvor ens produkt kan være svaret på dette spørgsmål. Jeg gjorde opmærksom på at mange webshops ikke lægger vægt på bæredygtighed og gennemsigtighed, og hvorfor dette er et presserende problem. Løsningen på dette er min webshop, som netop har fokus på bæredygtighed og gennemsigtighed. I andet punkt skaber man fokus på, hvorfor der er behov for produktet, og hvorfor det skiller sig ud. Jeg fortalte at mit produkt skiller sig ud, fordi det både er bæredygtigt, fordelagtigt, og unikt idet ingen andre har det. I det sidste punkt snakkede jeg om flere eksempler på fordele ved siden, som giver brugeren lyst til at besøge webshoppen. </p>
+                <p> Link: <a href="pitch.bjork.pdf">03.03.03 Pitch</a>
+                </p>
+                <p></p>
+            </section>
+            <section id="third_section">
+                <h1>Tema 4 - Animation</h1>
+                <p>På dette tema blev vi introduceret til programmeringssproget javascript, som taler sammen med HTML og CSS, og som bruges til at lave mere avancerede og dynamiske websites med interaktive elementer. Vi har dermed lært hvordan man fremstiller en interaktiv brugergrænseoverflade, der engagerer brugeren. Dette er et meget nyttigt værktøj til fremtidig brug på studiet. Vi har eksempelvis brugt javascript på efterfølgende temaer, og også i denne portfolio-opgave har jeg brugt viden fra dette tema til at lave en burgermenu med javacript. Temacasen for tema 4 var at kode et simpelt spil ved hjælp af javascript og CSS-animationer, men med nogle bestemte krav. </p>
 
-            <div id="sectionwrapper_portfolio">
+                <h2>04.01.05 Assetliste og designdokumentatin:</h2>
+                <p>Vi har på dette tema lært en del om formgivning af karakterdesign og baggrundsdesign og vigtige begreber inde for dette, som vi skulle have in mente, da vi selv skulle designe vores spil. Til at designe vores figurer, UI-elementer og spilskærme brugte vi Illustrator. Dette er noget jeg generelt synes er meget spændende, og jeg havde det derfor meget sjovt med at udforske illustrator og arbejde med mit design. Jeg tog udgangspunkt i Adventure Time, som er en tv-tegneserie, der har mange farver, og har et karakterdesign, der er opbygget af simple former, hvilket jeg tænkte, var godt at bruge som nybegynder i Illustrator. Og også fordi jeg synes det er en flot og gennemført tegneserie, som man husker pga. dens finurlige dog simple karakterer. Jeg valgte at lave et mere simpelt spil med udgangspunkt i nogle af de fremviste eksempler, så jeg havde mere tid til at fokusere på, og forstå javascript og kodningsdelen, da det er dette, jeg finder sværest. I denne aflevering skulle vi desuden implementere vores assetliste. En assetliste som indeholder alle vores spilelementer; både figurer, skærme og UI-elementer som svg’er, og som er lavet i HTML og CSS, og blev uploadet til vores eget domæne. Vi lærte om aktivitetsdiagrammer samt statemachine diagrammer. Forskellen på disse to er, at statemachine diagrammer er mere detaljerede. Man bruger disse til at vise spillets flow/hvad der skal ske for hvert stadie i spillet.</p>
 
-                <section id="first_section">
-                    <div class=overskrift>
-                    </div>
-                    <h1>Tema 2 - Grundlæggende web</h1>
-                    <p>I dette tema har vi bl.a. lært nye faglige begreber om digitale brugergrænseoverflader og hvordan man kan lave et simpelt website i HTML, som er et programmeringssprog til struktur af eksempelvis websites. Vi har bl.a. lært om selectorere, tags, classes og id’er og attributter, som er elementer man bruger til at kode. Dertil blev vi introduceret til styling-programmet, CSS, som snakker sammen med HTML, og bruges til at lave layout og styling og animationer til HTML-koden, så eks. websitet også bliver flot og brugervenligt. Vi lærte hvordan man via browser developer tools, kan inspicere et givent website, for at se hvordan det er bygget op. Dette gør det for eksempel nemmere at finde fejl og hurtigt rette ens kode til, når man selv skal kode. Man kan uden at ændre i ens kode først, se hvordan det kommer til at se ud via inspektoren. For at gøre et website designmæssigt pænt og brugervenligt, lærte vi bl.a. at bruge semantisk indholdstruktur i HTML og grid, flexbox og Boxmodellen m.m. i CSS. Vi har dertil lært at følge layoutdiagrammer og wireframes, når vi skulle kode. Et layoutdiagram viser grundstrukturen af HTML, og hvordan man laver dem for både mobilversion og desktopversion mv. En wireframe er et slags visuelt skelet for, hvordan ens content skal sættes op. Vi har lært, hvordan man håndterer prototype-programmet, Adobe XD. Vi har lært, hvordan websites bliver responsive ved hjælp af mediaqueries. En mediaquery gør at man kan få ting til at se forskellige ud, alt efter hvilken slags skærm man ser det på. Desuden har vi på dette tema lært om tekstopsætning og teksttermer, basale billedbehandlingsværtøjer i Photoshop og lært at benytte ftp (Filezilla) til deling af webproduktioner til vores eget domæne. </p> <br> <br>
-                    <h2>02.04.02 responsive_site_V2:</h2>
-                    <p>I denne opgave skulle vi lave et simpelt website i HTML og CSS ud fra en række krav, men om et valgfrit emne. Vi skulle bl.a. inddrage en bestemt stilart på vores site. I de første dage af temaopstarten lavede vi derfor gruppearbejde om flere forskellige stilarter, som vi skulle pitche til klassen. Vores gruppe fik stilen video game style, som er inspireret af gamle arkade-spil-maskiner og video-spil, og hvor der tit indgår interaktive elementer, animationer og kraftige farver.<br> Før vi gik i gang med kodning af sitet, skulle vi først lave en mock-up (prototype af det endelige site) i XD og et moodboard i Indesign, så vi fik en fornemmelse af hvordan det ville kunne se ud på det færdige site. Vi fik udstukket wireframes og layoutdiagrammer af lærerne, som vi skulle sætte vores content op efter. Først skulle vi lave et moodboard i Indesign og lave al indhold til sitet. Vi skulle også lave et styletile, som er linket til det endelige site, og som viser hvilke farver og skrifttyper man har tænkt sig at bruge og hvordan UI-elementerne (elementer brugeren kan interagere med på et site) på sitet skal se ud. Udover det har vi lært, hvor man kan finde royalty free billeder og finde fonte til ens site, hvordan man kan omdanne fonte og sætte dem ind i koden. I delopgaven som lå forud for det endelige site, Responsive_v0, skulle alt fungere med grid-layout, kolonner osv. I Responsive site v_1 lærte vi at style vores site ved hjælp af padding, margin, farver og skrifter etc. Vi lærte at beskære billeder i Photoshop, så de så godt ud i det gridbaserede layout. Dertil hvordan man laver og indsætter et favicon (det lille ikon venstre top hjørne, som demonstrerer hvilken side man er på, fx facebooks lille blå/hvid f-ikon) i HTML. Det endelige site skulle fungere i både mobil-desktop (skærm over 1200px) og se ud som planlagt og validere på et valideringssite for både HTML og CSS. Disse to valideringssider kan vise, om man har nogle fejl i ens kode. Vi har desuden lært om
-                        meta name="robots" content="noindex", som man sætter ind i head-elementet, for at sitet ikke kan indekseres af søgemaskiner. <br>Jeg valgte at lave et site om katte, og brugte farver i mine yndlingsfarver, for at personliggøre det. Til at demonstrere stilarten, video game style, brugte jeg pixeleret skrift og lavede et splashbillede i Photoshop med pixelerede katte-figurer.
-                        <br> <br>Link til det endelige site: <a href=http://bjorkaabling.dk/kea/02_web/04_responsive/responsive_site_v2>02.04.02 responsive_site_V2 </a>
+                <p> Link til assetliste: <a href=http://bjorkaabling.dk/kea/04_animation/assetliste/assetliste.html>Assetliste</a> <br> <br>
+                    Link til designdokumentation: <a href="animation_bjork.pdf">04.01.05 Assetliste og designdokumentation</a> <br> <br>
+                    Link til state machine diagram for spil: <a href="diagram.pdf">State machine diagram</a>
+                </p>
+                <div class="gameboy"><img src="fotos/gameboy.svg" alt="gameboy"></div>
+                <p></p>
 
-                    </p>
+                <h2>04.05.01 individuelt spil:</h2>
+                <p>
+                    Denne opgave var så at sige, det som hele temaet ledte op til. Vi skulle benytte vores nye viden til at kode og animere et spil ved hjælp af javascript, CSS og HTML. Spillet skulle følge nogle bestemte krav, bl.a. skulle spillet udelukkende være klikbaseret. I mit tilfælde kan man trykke på nogle kager, der hver især giver et udfald i pointsystemet. Der skulle indgå dårlige og gode elementer, man kan klikke på (dårlig, god og fantastisk kage i mit tilfælde). Der skulle indgå en tidstæller, man skulle kunne få point og kunne miste liv. Til at udskrive point brugte jeg javascript-funktionen concatenering - concatenering sammensætter flere ting, eks tekst og en variabel og sammensættes via et ”+” - her sammensatte jeg ordet point + variablen ” point”, alt efter hvor mange man havde i forvejen. Math.random er en formel i javascript, der kan give et random tal. Jeg brugte Math.random til at give mine elementer en ny random position mellem 0-3, når de skulle genstarte. Spillet skulle dertil kun kunne endes ved game over eller level complete. Her brugte jeg if else-metoden i javascript. Altså hvis noget er sandt, sker noget eller hvis noget er falskt, sker noget andet. I mit spil brugte jeg det til: If: hvis man har fået 10 point inden de 20 sekunder er løbet ud, skal spillet gå til level complete. Else: Hvis man derimod ikke har fået 10 point inden tiden løber ud, går spillet til Gameover. Og det samme princip med liv.
+                    Vi lærte at det er vigtigt at give svg’en både en sprite og en container, så man eksempelvis kan give containeren én animation og spriten én anden. På den måde kan et element altså f.eks. både bevæge sig på skærmen, ved at sætte en animation på containeren, og med spriten kan den f.eks. bevæge sig op og ned via en anden animation. Dette brugte jeg til at få mine figurer til at flytte sig på skærmen og samtidig køre op og ned med classes, som blev sat på henholdsvis sprite og container.
+                    Her lærte vi også at man med fordel kan gå ind i inspektoren og prøve at putte classer på og tage dem af manuelt, for at se hvordan animationen opfører sig, før man laver det via javascript.
+                    Vi har lært hvordan man via en document.querySelector ’hiver’ fat i et element fra HTML, og giver den en addEventListener. En addEventListener lytter til, hvornår den skal tilføje en class, det kunne f.eks. være et klik med musen (click). Når der er klikket, skal animationen ske. Dette gøres via en function med en console log (en console.log skriver en besked i konsollen, og er et nyttigt værktøj til at teste, om der reelt sker det man vil have). Functionen tilføjer en class, således at den hiver fat i elementet via document.querySelector og putter en class på via classList.add (her kan man også bruge classList.remove, hvis man vil fjerne en class) eks. ”forsvind”, som gør at elementet forsvinder. Det endelige spil skulle oploades til vores domæne og ferniseres for klassen. Vi skulle derefter prøve hinandens spil og give feedback (via et individuelt spørgeskema) på grafik og selve spiloplevelsen. Ud fra feedbacken havde vi mulighed for at forbedre vores spil.
+                </p>
+                <p> Link: <a href=http://bjorkaabling.dk/kea/04_animation/den_store_kagefangst>04.05.01 Individuelt spil</a></p>
+                <p></p>
+                <div class="img5"><img src="fotos/startskaerm.jpg" alt="startskærm" width="560" height="360"></div>
+                <div class="img6"><img src="fotos/spilskaerm.jpg" alt="spilskærm" width="560" height="360">
+                </div>
+            </section>
+            <section id="fourth_section">
 
+                <h1>Tema 5 - Grundlæggende indhold</h1>
+                <p>På semesterets sidste tema skulle vi lære at håndtere grundlæggende videoproduktion, herunder at forberede til optagelse, selve det at optage og postproduktion af videomaterialet. Til at redigere materialet skulle vi bruge Adobes videoredigeringsprogram Premiere Pro og lydredigeringsprogrammet Audition. Vi har lært om fotostile og at redigere billeder og tilføje effekter i Photoshop. Temacasen var at redesigne en selvvalgt virksomheds hjemmeside. Hertil har vi brugt meget viden fra de foregående temaer. Vi har lært om ophavsretsloven og markedsføringsloven, og om reglerne ved brug af billeder og musik i digital medieproduktion. Vi har lært at benytte forskellige redskaber til at skyde video og optage lyd. Vi blev introduceret til forskellige testmetoder herunder BERT-test og lighthouse test. Vi blev præsenteret for SCRUM-metoden, som er en metode til struktur og planlægning af arbejde. Dette tema har grundlæggende været i gruppearbejde, som er en vigtig del af studiet, da man lærer at samarbejde, kommunikere sine tanker og forene forskellige ideer. I modsætning til de foregående opgaver kunne vi i gruppearbejdet selv vælge, hvordan wireframes og layoutdiagrammer skulle laves. Vi har lært ny kode til redesign af hjemmesiden, men med grobund i de ting vi allerede har lært. Så dette tema har i høj grad været en opsamling, på de ting vi har lært igennem semesteret, men med tilføjelse af nye begreber og viden. </p>
+                <h2>05.01.01 Pilotprojekt:</h2>
+                <p>Denne opgave skulle give et bedre indblik i, hvordan man forbereder, optager og redigerer videomateriale samt redigerer lyd. Vi skulle filme en person omkring deres passion for noget. I vores gruppe valgte vi at filme Frederikke om hendes passion for maling. Vi lærte at udvikle et koncept, lave et storyboard og en log-line, som er handlingen fortalt i to sætninger. Vi lærte at lave B-rolls, som er video af noget, der giver mening i konteksten. Her var det f.eks. Frederikke, der maler eller nærbilleder af en pensel der blander farver. Videoen skulle også indeholde et establishingsshot med en titel og 5 forskellige klip med min. 3 forskellige framings. Vi optog lyd på en ekstern mikrofon. Dette skulle vi bl.a. gøre for at lyden blev bedre, og for at lære hvordan man lægger ekstern lyd på videoer, så de passer korrekt sammen. </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BKEPQINulbk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>05.03.01 Redesign og temadokumentation:</h2>
+                <p>Denne opgave har været en slags opsamling, på det vi har lært gennem hele semesteret, men tillagt en masse ny viden. Vi har eksempelvis kodet det nye site med viden fra de andre temaer og også lært ny kode. For eksempel har vi lært hvordan man laver en burgermenu: ☰, som mange moderne websites benytter sig af i mobilversion. Vi har lært a bruge netlify, så man kan arbejde fælles om kode og pushe og pulle de ting man laver, så hele gruppen kan se det ændrede. Først skulle vi inddeles i grupper og lave gruppekontrakt, herefter udvælge en scrum-master, som er ansvarlig for at sætte scrum-boardet op og holde øje med burn down chartet. Vi har brugt trello-board.com til at lave vores scrum. Her indsatte vi (i kategorier) hvad vi skulle lave, hvad vi var i gang med, og hvad var færdigt. Når man var færdig med en opgave, kunne man flytte rundt på dem, så man til sidst havde opfyldt alle de opgaver man havde sat i to-do-kategorien. Vi valgte virksomheden: Sisterbrandt, da vi synes hjemmesiden trængte til en makeover. Vi skulle derfor via tests finde ud af, hvad der skulle laves om på sitet. Her brugte vi bl.a. bert-test og 5 sekunders-test, hvor en anden gruppe kom med deres første indskydelser til, hvad de syntes det originale site formidlede. Vi fandt dermed ud af, at sitet gav associationer til noget, det ikke skulle, og vi var nu tættere på, at vide hvad vi ville ændre, for at sitet blev optimeret. Vi udelte opgaverne imellem os og holdt hver dag scrum-meeting, hvor vi talte om status og produktion. Vores gruppe mødtes fysisk så oftest som muligt, hvilket jeg synes fungerede rigtig godt. Vi stod hver især for at kode en side til websiden. Jeg stod for at kode produktsiden. For at optimere sitet lavede vi bl.a. en kontaktformular, som gør det lettere for fremtidige kunder at komme i kontakt med virksomheden. Alt i alt blev vi tilfredse med vores redesign på trods af visse udfordringer, og vi synes det nye site afspejler forretningen og vejleder i stedet for at vildlede brugeren. Til slut skulle vi præsentere processen og det nye site i grupper på teams og give hinanden feedback. </p>
 
+                <p> Link: <a href="redesign_og%20temadokumentation%20.pdf">05.03.01 Redesign og temadokumentation</a>
+                </p>
+                <div class="kamera"><img src="fotos/kamera.svg" alt="kamera"></div>
+                <p></p>
+                <div class="img7"><img src="fotos/redesign_forside.png" alt="forside" width="560" height="360"></div>
+                <div class="img8"><img src="fotos/redesign_produktside.png" alt="produktside" width="560" height="360">
+                </div>
 
-                    <div class="computer"><img src="fotos/computer%20.svg"></div>
-                    <div class="img1"><img src="fotos/forsideresponsivesite.png" alt="forside" width="560" height="360">
-                    </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        ® All rights reserved - Björk Brandt Aabling
+    </footer>
 
-                    <img src="fotos/inteterbedreendkatte.png" alt="katte" width="560" height="360">
-
-                </section>
-                <section id="second_section">
-                    <h1>Tema 3 - Grundlæggende UX</h1>
-                    <p>I dette tema har vi lært en masse om UX'er (user experience) og UI (user interface). Vi har opnået en grundlæggende forståelse for samspillet mellem bruger og brugergrænseoverflader. Vi har lært at lave et brugervenligt og overbevisende produkt. Vi har dertil lært, hvordan man formidler et produkt, så man fanger brugeren og overbeviser dem om, at netop ens produkt er det bedste på markedet frem for konkurrentens. For at få en idé om hvad en god brugeroplevelse er og ikke er, undersøgte vi eksisterende hjemmesider og deres brug af eksempelvis microcopy og USP. USP er unikke fordele, som kunder ikke kan finde andre steder. Dette er en god idé at benytte i sin markedsføring, for at skille sig ud fra konkurrenterne og vise potentielle leads og kunder, hvad man tilbyder/gør anderledes, der enten er eller medfører noget, der ikke findes andre steder. Microcopy er ord eller sætninger der guider brugeren, til hvordan man interagerer med en hjemmeside/produkt.
-                        For at kunne opnå et godt brugervenligt site/produkt, er det vigtigt at lave undersøgelser om brugeren først, da man godt kan have en forudindtaget mening om, hvad en bruger gør og mener. Men når man så undersøger og indsamler empiri, kan det vise sig at give nogle helt andre resultater end dem, man havde regnet med. Vi lærte derfor om flere research- og anelysemetoder, som er gode at benytte, når man skal indsamle empiri. Vi indsamlede empiri både fra hinanden i klassen, men også fra vores omgangskreds og andre relevante kilder, der gave et indblik i, hvad bestemte målgrupper vægter, når de eksempelvis vælger webshops. For at demonstrere vores nye viden, skulle vi lave en case for temaet; nemlig designe en T-shirt webshop og pitche den i grupper.
-
-                    </p>
-                    <h2>03.01.05 Idé:</h2>
-                    <p>I denne opgave skulle vi udforme de spæde idéer til vores T-shirt-webshop. Vi blev introduceret til flere UX-researchmetoder, bl.a. observationsmetoden og kvalitativt og kvantitativt interview samt surveys og idégenererings-øvelser. Disse brugte vi til bedre at forstå, hvorfor brugere gør som de gør, hvad deres motivation bag ved er, og hvad de har brug for. Først startede vi med at lave en desk research, som er undersøgelse af sekundær data, som allerede er blevet indsamlet. Jeg læste en rapport om e-handel og fandt bl.a. ud af at danskerne i 2019 lå i toppen af dem, der handler mest på nettet og at ”de unge forventer i højere grad indhold i form af produktanmeldelser og produktbilleder samt fokus på bæredygtighed…”. Dette viste sig at være meget brugbart idet jeg valgte at min side, primært skulle fokusere på unge brugere i alderen 15-30. Jeg lavede et moodboard med sider jeg fandt inspirerende og selv shopper hos, og for at spore mig ind på, hvad jeg selv ville opnå med min webshop. Og fandt en masse eksempler på god og dårlig microcopying.
-                    <div class="tshirt"><img src="fotos/tshirt.svg"></div>
-                    <p> Link: <a href="ide_bjork.pdf">03.01.05 Idé</a></p>
-
-                    <h2>03.03.02 Endelig prototype:</h2>
-                    <p>Den sidste del af dette tema skule munde ud i den endelige prototype af vores webshop. På baggrund af min nye viden skulle jeg først finde ud af noget om min målgruppe.
-                        Jeg lavede derfor et semistruktureret interview. Semistrukturerede interviews giver plads til at spørge om uforberedte spørgsmål, lade den adspurgte bevæge sig væk fra de konkrete spørgsmål, og hvor intervieweren ikke nødvendigvis skal spørge i en bestemt rækkefølge. Jeg valgte at interviewe min roomie, og fandt ud af at hun går meget op i bæredygtighed, og hun havde en fornemmelse af at mange unge også gør det. Dette gjorde mig nysgerrig på, om det virkelig forholder sig sådan. Dette fik jeg afklaret ved at lave et struktureret interview igennem en survey, som jeg delte på facebook. Strukturerede interviews følger rækkefølgen fra interviewguiden, der er lavet i forvejen, og de interviewede skal vælge en af de udstukne svarmuligheder. Svarene differerede lidt, men hovedparten, som i høj grad var unge, mente at bæredygtighed og kvalitet er vigtigt, når de skal handle på nettet.
-                        På baggrund af min nye viden om brugernes behov og med idégenerering og inspiration fra resten af klassen, kunne jeg nu gå i gang med at lave min webshop. Vi skulle lave først lave en Low Fidelity udgave af vores site - vi skulle skitsere (på papir) hvordan sitet skulle se ud, og hvad det i grove træk skulle kunne. Derefter lave en udførlig High Fidelty-prototype i Adobe XD, der bl.a. viste hvordan brugeren kunne komme rundt på siden og gennemføre et køb, og som så ud, som vi gerne ville have. Jeg valgte som sagt at lave en side om genbrugelige stofrester, der kunne omsys til noget nyt, fordi jeg går op i miljø og bæredygtighed. Stilen på hjemmesiden, valgte jeg at lave enkel og i lyserøde og lilla nuancer og med små blomsterdetaljer, fordi det repræsenterer mit univers, hvilket giver webshoppen et personligt touch, som brugeren nemmere kan huske. Dertil tilføjede jeg USP i form af specielle tilbud og rabatter og microcopy i form af små opmuntrende og guidende tekster -alt sammen noget der gavner og hjælper brugeren. Jeg lavede en "om"-side, hvor man kan læse om, hvor materialerne kommer fra, og om mig som stifter af projektet, og hvordan mine kollegaer har et godt arbejdsmiljø. Dette gjorde jeg, for at øge gennemsigtigheden i produktet og skabe troværdighed. Jeg synes generelt det er et problem at mange websider ikke oplyser om, hvor deres produkter stammer fra, og hvem der laver dem. Udover at sitet opfylder de krav jeg synes er vigtige, opfylder de også kravene min målgruppe (18-30-årige) synes er vigtige, hvilket jeg fandt ud af igennem min research.
-
-                    </p>
-                    <p> Link:
-                        <a href=https://xd.adobe.com/view/b9f16832-dac8-4194-a455-081f681cb9fb-eca2/screen/13e87bce-a615-472f-bd33-479aac0cce27>03.03.02 Endelig prototype </a>
-                    </p>
-                    <p></p>
-                    <div class="img2"><img src="fotos/prototypeforside.png" alt="prototype1" width="560" height="360"></div>
-                    <img src="fotos/prototypebetaling.png" alt="prototype2" width="560" height="360">
-                    <h2>03.03.03 Pitch:</h2>
-                    <p>I denne opgave skulle vi lave en pitch af vores færdige prototype og vejen dertil. Her tog jeg udgangspunkt i pitchmodellen NABC-en pitch-skabelon med følgende punkter: 1: Attenion, 2: Needs, Approach og Benefits, 3: Competetion eller Action, som vi også har gjort brug af i tema 5, da vi skulle fremlægge vores redesignopgave. I første punkt skaber man opmærksomhed på sit produkt og fremlægger en fængende indgangsvinkel som fastholder publikum. Man kan for eksempel provokere publikum lidt eller stille et spørgsmål, hvor ens produkt kan være svaret på dette spørgsmål. Jeg gjorde opmærksom på at mange webshops ikke lægger vægt på bæredygtighed og gennemsigtighed og hvorfor dette er et presserende problem. Løsningen på dette er min webshop, som netop har fokus på bæredygtighed og gennemsigtighed. I andet punkt skaber man fokus på, hvorfor der er behov for produktet, og hvorfor det skiller sig ud. Jeg fortalte at mit produkt skiller sig ud, fordi det både er bæredygtigt, fordelagtigt, og er unikt idet ingen andre har tøjet. I det sidste punkt snakkede jeg om flere eksempler på fordele ved siden, som giver brugeren lyst til at besøge webshoppen.</p>
-                    <p> Link: <a href="pitch.bjork.pdf">03.03.03 Pitch</a>
-                    </p>
-                    <p></p>
-                </section>
-                <section id="third_section">
-                    <h1>Tema 4 - Animation</h1>
-
-                    <h2>04.01.05 Assetliste og designdokumentatin:</h2>
-                    <p>På dette tema blev vi introduceret til programmeringssproget javascript, som man bruger i samspil med bl.a. html til at lave mere avancerede websites med interaktive elementer. Dette har vi brugt på efterfølgende temaer, og også i denne portfolio-opgave.</p>
-                    <div class="gameboy"><img src="fotos/gameboy.svg" alt="gameboy"></div>
-
-                    <p> Link til assetliste: <a href=http://bjorkaabling.dk/kea/04_animation/assetliste/assetliste.html>Assetliste</a> <br> <br>
-                        Link til designdokumentation: <a href="animation_bjork.pdf">04.01.05 Assetliste og designdokumentation</a> <br> <br>
-                        Link til state machine diagram for spil: <a href="diagram.pdf">State machine diagram</a>
-                    </p>
-                    <p></p>
-
-                    <h2>04.05.01 individuelt spil:</h2>
-                    <p>I denne opgave skulle vi kode og animere et spil ved hjælp af javascript, css og html. Vi lærte om forskellige spildesign og udviklede så vores eget design men med inspiration fra et eksisterende design. Derefter skulle vi udforme vores eget figurdesign i illustrator, bruge state machine- og aktivitesdiagrammer til at vise hvad vi trinvis ville have til at ske i vores spil og derefter kode spillet. Jeg tog udgangspunkt i Adventure Time, som er en tegneserie, der har mange farver og har et karakterdesign der er opbygget af simple former, hvilket jeg tænkte var godt at bruge som nybegynder i illustrator, og også fordi jeg synes det er en flot og gennemført tegneserie, som man husker pga. dens finurlige dog simple karakterer. Jeg valgte at lave et mere simpelt spil så jeg havde mere tid til at fokusere og gå mere i dybden med at kunne forstå koden bag og animation i javascipt. </p>
-                    <p> Link: <a href=http://bjorkaabling.dk/kea/04_animation/den_store_kagefangst>04.05.01 Individuelt spil</a></p>
-                    <p></p>
-                    <div class="img3"><img src="fotos/startskaerm.jpg" alt="startskærm" width="560" height="360"></div>
-                    <img src="fotos/spilskaerm.jpg" alt="spilskærm" width="560" height="360">
-                </section>
-                <section id="fourth_section">
-
-                    <h1>Tema 5 - Grundlæggende indhold</h1>
-                    <h2>05.01.01 Pilotprojekt:</h2>
-                    <p>I dette tema skulle vi lære.</p>
-                    <p>Link: <a href=https://www.youtube.com/watch?v=BKEPQINulbk&feature=youtu.be>05.01.01 Pilotprojekt</a></p>
-                    <p></p>
-                    <h2>05.03.01 Redesign og temadokumentation:</h2>
-
-                    <p>I denne opgave skulle vi lære basic HTML-kode og css at kende ved at lave en hjemmeside om et valgfrit emne. Dog skulle vi følge en wireframe for både mobilversion og desktopversion udstukket af lærerne. Desuden har vi lært om layoutdiagrammer og...</p>
-                    <div class="kamera"><img src="fotos/kamera.svg" alt="kamera"></div>
-                    <p> Link: <a href="redesign_og%20temadokumentation%20.pdf">05.03.01 Redesign og temadokumentation</a>
-                    </p>
-                    <p></p>
-                    <div class="img4"><img src="fotos/redesign_forside.png" alt="forside" width="560" height="360"></div>
-                    <img src="fotos/redesign_produktside.png" alt="produktside" width="560" height="360">
-
-
-                </section>
-            </div>
-        </main>
-        <footer>
-           ® All rights reserved - Björk Brandt Aabling
-        </footer>
-
-        <script src="script.js"></script>
-    </body>
-
-</div>
-
+    <script src="script.js"></script>
+</body>
 
 </html>
